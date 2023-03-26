@@ -10,7 +10,7 @@ HTTP falls under the the **Application Layer Protocol** and it uses a **Client-s
 1. **Client** : A device that is capable of using the HTTP protocol, eg. from a browser, that requests receieves and "displays" web objects. ( Using TCP or UDP )
 2. **Server** : Web server is responsible for sending beack objects that are in response to the requests that are made to the server.
 
-![OSI Model](../osi.png)
+![OSI Model](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/osi.png)
 src : https://www.researchgate.net/figure/TCP-IP-layered-protocol-communication-between-two-end-point-devices-Functionally_fig1_310317068
 
 ### TCP 
