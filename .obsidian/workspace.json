@@ -29,10 +29,30 @@
                 "mode": "source",
                 "source": false
               }
-            }
+            },
+            "group": "18ee54c9615acfb4"
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "498f90fadf2cc236",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "00a0fdc95d505fd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSD 2160 (Networking)/Chapter 2 - Application Layer.md",
+                "mode": "preview",
+                "source": false
+              }
+            },
+            "group": "18ee54c9615acfb4"
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Web-and-HTTP",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,11 +98,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e41c109c05f019c8",
@@ -146,7 +168,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
