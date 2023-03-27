@@ -22,7 +22,7 @@ Sockets provides an application with a standardized way to send and receive mess
 
 Below shows an image that explains the basic role of a socket
 
-![Socket]()
+![Socket](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/socket.png)
 
 All processes have a unqiue identifier to allow the process to interface with the socket and send or receive messages. The identifier includes a *unique* 32-bit IP address and port number that is associated with the process.
 
