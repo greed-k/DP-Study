@@ -1,26 +1,14 @@
 {
   "main": {
-    "id": "3682bb2211a9f8f9",
+    "id": "ddb052f7bd3eb9bf",
     "type": "split",
     "children": [
       {
-        "id": "37e97c49628ff62e",
+        "id": "738778f00a32f0dd",
         "type": "tabs",
         "children": [
           {
-            "id": "15b39f5203983525",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c7f8ee07c725555e",
+            "id": "a4479582121155e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,17 +18,16 @@
                 "source": false
               }
             },
-            "group": "18ee54c9615acfb4"
+            "group": "0076f2bea24d7320"
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
-        "id": "498f90fadf2cc236",
+        "id": "524f6221143cc8be",
         "type": "tabs",
         "children": [
           {
-            "id": "00a0fdc95d505fd3",
+            "id": "256e23c65fd2b379",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,7 +37,7 @@
                 "source": false
               }
             },
-            "group": "18ee54c9615acfb4"
+            "group": "0076f2bea24d7320"
           }
         ]
       }
@@ -58,15 +45,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "de2c6185c9d26bc8",
+    "id": "3129433d2408a042",
     "type": "split",
     "children": [
       {
-        "id": "2c67c3f84eccc773",
+        "id": "c173a664b7f59e5d",
         "type": "tabs",
         "children": [
           {
-            "id": "118ca6d5e3b10138",
+            "id": "0dc4cd0ee2b83710",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -76,12 +63,12 @@
             }
           },
           {
-            "id": "337ece577b1f73e1",
+            "id": "9673dea631953ea7",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Web-and-HTTP",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,15 +78,14 @@
             }
           },
           {
-            "id": "7d3599fbaeed6b5c",
+            "id": "8bf0b8a96a0347fe",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -107,15 +93,15 @@
     "collapsed": true
   },
   "right": {
-    "id": "e41c109c05f019c8",
+    "id": "b4e5273d427a4be7",
     "type": "split",
     "children": [
       {
-        "id": "7c88834a937dda85",
+        "id": "3c26210383f0dc19",
         "type": "tabs",
         "children": [
           {
-            "id": "f34243a72222a5cb",
+            "id": "b6b2ea952836016c",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -132,7 +118,7 @@
             }
           },
           {
-            "id": "3e4ea8049f72f46f",
+            "id": "033f4914bea64ee9",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -144,7 +130,7 @@
             }
           },
           {
-            "id": "e27862795da9bae8",
+            "id": "bbdfef552b07bcf1",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -155,7 +141,7 @@
             }
           },
           {
-            "id": "319488b100855e64",
+            "id": "e61444f9b7677396",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -181,13 +167,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7f8ee07c725555e",
+  "active": "256e23c65fd2b379",
   "lastOpenFiles": [
     "CSD 2160 (Networking)/osi.png",
-    "CSD 2160 (Networking)/Pasted image 20230326202141.png",
-    "Pasted image 20230326202141.png",
-    "Pasted image 20230326202016.png",
-    "README.md",
     "CSD 2160 (Networking)/Chapter 2 - Application Layer.md",
     "CSD 2160 (Networking)"
   ]

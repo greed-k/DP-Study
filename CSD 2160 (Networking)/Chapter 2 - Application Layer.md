@@ -25,9 +25,13 @@ The TCP protocol is protocol that is part of the transport layer.
 ### Persistent and Non-Persistent Connections
 
 #### Non-Persistent Connection ( HTTP 1.0 )
-- One object sent over at a time over the TCP connections
-- Connection is closed after the exchange
-- When downloading objects, **MULTIPLE** connections are required.
+- Properties
+	-  One object sent over at a time over the TCP connections
+	- Connection is closed after the exchange
+	- When downloading objects, **MULTIPLE** connections are required.
+- Issues
+	- Requires 2 [RTT](###response-time-(rtt))
+
 
 #### Persistent Connections ( HTTP 1.1 )
 - Multiple objects sent over a single TCP connection between the client and server.
@@ -35,3 +39,8 @@ The TCP protocol is protocol that is part of the transport layer.
 
 ### Response Time ( RTT )
 
+Response Time ( RTT ) refers to the time for a small packet to travel from client to the server and back. 
+Transmission time refers to the time take for a small packet to be streamed or emitted into the medium.
+
+**FORMULA** : 
+- **NON-PERSISTENT** HTTP response time  = 2 RTT + Transmission Time
