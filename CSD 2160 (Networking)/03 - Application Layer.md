@@ -20,6 +20,42 @@ A servers characteristics is as follows:
 ## Sockets
 Sockets provides an application with a standardized way to send and receive messages over the internet without having to know the low-level details.
 
+Below shows an image that explains the basic role of a socket
+
+![Socket]()
+
+All processes have a unqiue identifier to allow the process to interface with the socket and send or receive messages. The identifier includes a *unique* 32-bit IP address and port number that is associated with the process.
+
+### Examples:
+Example port numbers
+- HTTP server: 80
+- Mail server : 25
+To send HTTP message to ict.singaporetech.edu.sg web server:
+- IP Address :128.119.245.12
+- Port number: 80
+
+### Message Definitions
+In a tytpical HTTP message that is about to be sent out by a client, it will contain the following information:
+- Type of message : Request, Response
+- Message Syntax : What fields in messages and how fields are delineated
+- Message semantics : The meaning of the information in the fields
+- Rules :  When and how the processes can send and respond to messages that are being sent and receiving.
+
+### Transport Layer Services 
+Below lists some services that are required by an app when using a socket
+- Data Integrity
+	- Some apps requires 100% reliable data transfer ( file transfer , web transactions)
+	- Some apps can tolerate losses ( streaming audio or video )
+- Timing (Latency)
+	- Some apps require low amounts of delay to work effectively 
+		- eg. Games, Video Chatting, Internet Phone Calls
+- Throughput
+	- Amount of bandwidth/ throughput that an app can get
+	- Some apps (video streaming ) requires a certain amount of throughput to be effective
+	- Other apps are able to make use of whatever throughput that they get
+- Security 
+	- Some apps need encryption and data integrity
+		- eg. Web transactions, Online banking
 
 
 ---

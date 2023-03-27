@@ -149,6 +149,7 @@ HTTP has support for *self-describing feature* using MIME (Multipurpose Internet
 	- DELETE
 		- Deletes file specified in the URL field
 - HTTP Response Message:
+
 ![HTTP Response Message](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/HTTP_response.png)
 
 - HTTP Response status codes
@@ -194,7 +195,7 @@ The goal of a proxy server is to fulfill the proxy request without involving the
 - When web caching is implemented through the proxy server, the server is configured to cache the  webpages that are commonly requested by the users. 
 
 Below contains the diagram that shows how the proxy server is commonly configured in a normal  client-server deployment setting.
-![Proxy_Server](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/proxy.png)
+![Proxy_Server]()
 
 Caches will be able to act as both a client and server.
 - The caches can act as a sort of server to allow for faster access speeds for clients that might be requesting for the pages that they need
