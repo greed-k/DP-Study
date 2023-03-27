@@ -163,7 +163,7 @@ HTTP has support for *self-describing feature* using MIME (Multipurpose Internet
 	- 505 HTTP Version Not Supported
 
 ---
-## Cookies
+# Cookies
 Cookies is a form of user state retention that is used by websites to store more personal information that is required by the website to function. These information can be things such as the user's login information.
 
 This happens when a user access a site for the first time. When the initial HTTP request arrives at the site, it will ID the user and creates a unique ID and an entry in the backend data base for the ID.
@@ -187,7 +187,7 @@ Cookies: HTTP messages carrying the state.
 
 
 --- 
-## Web Caching
+# Web Caching
 ### Proxy Server
 The goal of a proxy server is to fulfill the proxy request without involving the original server
 -  The proxy server is a intermediary server that is located between the client and the original web server. 
