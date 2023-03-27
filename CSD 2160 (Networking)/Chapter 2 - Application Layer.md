@@ -90,8 +90,26 @@ Assuming that a webpage consists of
 - 1 Base HTML page ( Size O )
 - M images ( Each Size O )
 
+All schemes of HTTP modeling includes transmission time of $(M + 1)*\frac{O}{R}$ where R is the response time.
+
+1. Non-Persistent HTTP:
+	- M + 1 TCP connections in series
+	- Response time = M + 1 times the time to send an object of size O over a TCP connection.
+	- $t_{ResponseTime}=(M+1)*\frac{O}{R}+(M+1)*2RTT$
+2. Persistent HTTP with pipelining
+	- 2 RTT before beginning to receive base HTML file (1 RTT for TCP, 1 for HTTP)
+	- 1 RTT to request and receive M images
+	- $t_{ResponseTime}=(M+1)*\frac{O}{R}+3RTT$
+3. Non-Persistent , parallel HTTP:
+	- Suppose up to X parallel connections; M/X integer. 
+	- 1 TCP connection for base file 
+	- M/X sets of parallel connections for images.
+	- $t_{ResponseTime}=(M+1)*\frac{O}{R}+(\frac{M}{X}+1)*2RTT$
+	
 
 
+
+## HTTP Message
 
 ## FORMULAS
 | Name | Formula |
@@ -100,5 +118,8 @@ Assuming that a webpage consists of
 |Transmission Delay| $d_{transmission} = \frac{L}{R}$|
 |Propagation Delay| $d_{propagation} = \frac{d}{s}$|
 |Node Delay | $d_{node} = d_{process} + d_{queue} + d_{transmission} + d_{propagation}$|
+|Non-Persistent HTTP|$t_{ResponseTime}=(M+1)*\frac{O}{R}+(M+1)*2RTT$|
+|Persistent HTTP with pipelining|$t_{ResponseTime}=(M+1)*\frac{O}{R}+3RTT$|
+|Non-Persistent , parallel HTTP|$t_{ResponseTime}=(M+1)*\frac{O}{R}+(\frac{M}{X}+1)*2RTT$|
 
 
