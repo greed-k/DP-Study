@@ -30,7 +30,7 @@ The TCP protocol is protocol that is part of the transport layer.
 	- Connection is closed after the exchange
 	- When downloading objects, **MULTIPLE** connections are required.
 - Issues
-	- Requires 2 [RTT](###response-time-(rtt))
+	- Requires 2 [RTT](###response-time--rtt-)
 
 
 #### Persistent Connections ( HTTP 1.1 )
