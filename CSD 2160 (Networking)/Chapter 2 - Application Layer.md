@@ -107,11 +107,95 @@ All schemes of HTTP modeling includes transmission time of $(M + 1)*\frac{O}{R}$
 	- $t_{ResponseTime}=(M+1)*\frac{O}{R}+(\frac{M}{X}+1)*2RTT$
 	
 
-
-
+---
 ## HTTP Message
 
-## FORMULAS
+HTTP has support for *self-describing feature* using MIME (Multipurpose Internet Mail Extensions) that informs the server about the data representation that they can understand.
+
+### HTTP Request Message
+![HTTP Request Example]()
+
+### Uploading form input
+
+#### POST 
+- Webpage will include the form input to send to the server
+- Input is uploaded to the server in the entity's body of the HTTP request message
+
+#### GET
+- Uses the URL mehthod
+- The input is embedded into the URL field of request line
+- eg: www.somesite.com/animalsearch?animal=monkey%26fruit=banana
+
+#### POST vs GET
+- POST
+	- *UNLIMITED* amount of data that can be sent to server 
+	- Data *GURANTEED* to send to server
+	- Requires a form to collect data
+- GET
+	- Limited to *255* bytes
+	- Data can be *INTERCEPTED* by cache proxy
+	- Not necessary to use a form. Can be embedded directly into the URL.
+
+### Method Types
+- HTTP/1.0 :
+	- GET
+	- POST
+	- HEAD
+		- Asks server to leave requested object out of the response
+- HTTP/1.1
+	- GET, POST , HEAD
+	- PUT
+		- Uploads file into entity body to path specified in URL field
+	- DELETE
+		- Deletes file specified in the URL field
+- HTTP Response Message:
+![HTTP Response Message]()
+
+- HTTP Response status codes
+	- 200 OK
+		- Request has succeeded, requested object is inside the response message
+	- 400 Bad Request
+		- Reqest message is not understood by the server
+	- 301 Moved Permanently
+		- Requested object moved new location specified later in the response message
+	- 404 Not Found
+		- Requested document not found on this server
+	- 505 HTTP Version Not Supported
+
+---
+## Cookies
+Cookies is a form of user state retention that is used by websites to store more personal information that is required by the website to function. These information can be things such as the user's login information.
+
+This happens when a user access a site for the first time. When the initial HTTP request arrives at the site, it will ID the user and creates a unique ID and an entry in the backend data base for the ID.
+
+### Components
+1. Cookie header line of HTTP response message
+2. Cookie header line in next HTTP request message
+3. Cookie file kept on user's host , managed by user's browser
+4. Back-end database at Website
+
+### Uses 
+- Authorization
+- Shopping Carts ( E-Commerce )
+- Recommendations ( Advertisements )
+- User Session State ( Web E-Mail )
+
+### How is the cookie state maintained
+
+Protocol endpoints: maintain state at sender / receiver over multiple transactions
+Cookies: HTTP messages carrying the state.
+
+
+--- 
+## Web Caching
+### Proxy Server
+
+The goal of a proxy server is to fulfill the proxy request without involving the original server
+
+
+
+---
+# FORMULAS
 | Name | Formula |
 | -------- | ------- |
 |Response Time| $t_{reponse} =  2RTT + t_{transmission}$|
