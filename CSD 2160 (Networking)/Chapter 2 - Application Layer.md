@@ -51,7 +51,7 @@ Response Time ( RTT ) refers to the time for a small packet to travel from clien
 Transmission time refers to the time take for a small packet to be streamed or emitted into the medium.
 
 **FORMULA** : 
-$$ t_{reponse} =  2RTT + t_{transmission}$$
+$$t_{reponse} =  2RTT + t_{transmission}$$
 
 - $t_{response}$  :  Non-Persistent HTTP response time
 - $RTT$  :  Each Response time cycle timing
