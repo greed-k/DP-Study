@@ -63,7 +63,7 @@ $$t_{reponse} =  2RTT + t_{transmission}$$
 	- Eg : Imagine pouring a cup of water into a pipe. It takes a finite amount of time for you to empty the cup.
 	- This can be lowered by having a bigger bandwidth that is available to the network
 - **FORMULA** 
-	- *$$d_{transmission} = \frac{L}{R}$$
+	- $$d_{transmission} = \frac{L}{R}$$
 	- L : Data Size
 	- R : Bandwidth
 #### Propagation Delay
