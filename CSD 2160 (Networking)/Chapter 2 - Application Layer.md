@@ -113,7 +113,7 @@ All schemes of HTTP modeling includes transmission time of $(M + 1)*\frac{O}{R}$
 HTTP has support for *self-describing feature* using MIME (Multipurpose Internet Mail Extensions) that informs the server about the data representation that they can understand.
 
 ### HTTP Request Message
-![HTTP Request Example]()
+![HTTP Request Example](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/HTTP_Request_Message.png)
 
 ### Uploading form input
 
@@ -149,7 +149,7 @@ HTTP has support for *self-describing feature* using MIME (Multipurpose Internet
 	- DELETE
 		- Deletes file specified in the URL field
 - HTTP Response Message:
-![HTTP Response Message]()
+![HTTP Response Message](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/HTTP_response.png)
 
 - HTTP Response status codes
 	- 200 OK
