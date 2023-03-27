@@ -189,10 +189,21 @@ Cookies: HTTP messages carrying the state.
 --- 
 ## Web Caching
 ### Proxy Server
-
 The goal of a proxy server is to fulfill the proxy request without involving the original server
+-  The proxy server is a intermediary server that is located between the client and the original web server. 
+- When web caching is implemented through the proxy server, the server is configured to cache the  webpages that are commonly requested by the users. 
 
+Below contains the diagram that shows how the proxy server is commonly configured in a normal  client-server deployment setting.
+![Proxy_Server]()
 
+Caches will be able to act as both a client and server.
+- The caches can act as a sort of server to allow for faster access speeds for clients that might be requesting for the pages that they need
+- The caches can also be a client to the original server
+
+**Why web caching?**
+-  It can help reduce response time for client requests
+-  It can help reduce the amount of traffic that is accessing an insitutition's main server
+-  Allow for speedier deliver of requests to servers that are of a smaller scale and unable to provide to a large group of users at the same time.
 
 ---
 # FORMULAS
