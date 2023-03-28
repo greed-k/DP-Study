@@ -57,6 +57,25 @@ Below lists some services that are required by an app when using a socket
 	- Some apps need encryption and data integrity
 		- eg. Web transactions, Online banking
 
+### Commonly useds applications
+Below attaches a photo that describes some commonly used application and the accompanying 
+
+![CommonApplication]()
 
 ---
 # Socket Programming
+
+## High Level Overview
+
+Below will list the steps of how a client can contact and send messages to a server with socket programming
+
+- Pre-Requisites for client and server
+	- Server instance must be running
+	- Server must have created a socket that welcomes the clients connection
+- Clients method to contact server instance
+	- TCP socket to be created, with specified IP address and port number of the server process
+	- After the socket is created, the client's TCP will connect to the server's TCP socket
+- Server receives connection from the client
+	- After establishing connection with the client from the welcome socket, the server will create a new TCP socket that will communicate with the client in particular.
+	- This allows the server to welcome new clients after receiving one
+	- The source port numbers that is included when the user is connecting to the server will be used as a way to distinguish the clients apart from each other
