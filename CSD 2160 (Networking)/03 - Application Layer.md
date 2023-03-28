@@ -60,7 +60,7 @@ Below lists some services that are required by an app when using a socket
 ### Commonly useds applications
 Below attaches a photo that describes some commonly used application and the accompanying 
 
-![CommonApplication]()
+![CommonApplication](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/applications.png)
 
 ---
 # Socket Programming
