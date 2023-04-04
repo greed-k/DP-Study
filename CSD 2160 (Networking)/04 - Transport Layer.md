@@ -29,7 +29,7 @@ Examples of apps that uses UDP as its protocol of choice for transfer
 
 ## UDP Segment
 
-![UDPSegment]()
+![UDPSegment](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/udpSegment.png)
 
 ## UDP Checksum
 ***CHECKSUM*** : Addition of segment content
@@ -57,7 +57,7 @@ Even with all these features of TCP, there are drawbacks with the protocol the d
 	- TCP is a connection oriented protocol, and there are no forms of security that is put in place to ensure what data is being sent is fully secure.
 ## TCP Segment
 
-![TCPSegment]()
+![TCPSegment](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/tcpSegment.png)
 
 ## TCP Flags
 |Name | Definition|
@@ -77,7 +77,7 @@ Handshaking of the sender and receiver refers to:
 - Ensure that there will be no ambiguity between the client and server when the connection has opened.
 ### TCP 3-way handshake
 
-![3way]()
+![3way](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/3wayHandshake.png)
 
 ### TCP Sequence number & Acknowledgement number
 The sequence number (***SEQ***) for a segment is the byte-stream number of the **first** byte in the segment.
