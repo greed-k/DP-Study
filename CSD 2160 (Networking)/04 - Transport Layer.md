@@ -82,4 +82,46 @@ Handshaking of the sender and receiver refers to:
 ### TCP Sequence number & Acknowledgement number
 The sequence number (***SEQ***) for a segment is the byte-stream number of the **first** byte in the segment.
 
-Eg.
+The acknowledgement number (**ACK**) is a number that is retrived from the message that the current host receives from the other host that it is communicating with.
+
+For better illustration, a diagram will be provided below which is a snippet from the slides.
+
+Eg. 
+![seqNack]()
+
+As seen from the imgage above, host A types in the character 'C' and it is sent over to host B. 
+Host B receives the message, acknowledges the message by taking the sequence number that was used for the previous number to be used as the acknowledge number (**ACK**) to inform the other host when sending back the message that it has already received the message previously. The size of the data is then also factored into the acknowledge number that is being set over, hence why the number changed from 42 to 43.
+
+The sequence number that is used for host B to send back the message will then be the acknowledge number that was previously sent over from host A.
+
+### Closing a TCP connection
+
+![closingTCP]()
+
+Steps that is followed by the protocol to close the connection.
+1. Client will send a message containing the flag **FIN** set to 1.
+2. Server receives the message, sends back another message with the **ACK** bit in the TCP segment structure set to 1, and the ACK number that is sent back will be the sequence number +1 from the **FIN** bit.
+3. Server will also close their connection from the client, then repeating something similar, where the sever will send a message this time with the **FIN** flag set to 1 in the TCP segment structure and sent back to the client
+4. The client will repeat what the server has done previously, sending a TCP segment structure with the **ACK** bit set to 1, and the **ACK** number will take the sequence number that was sent from the server's message and adding the 1 to the number that is from the **FIN** bit that was set previously  by the server.
+
+### Reliable Data Transfer
+There are some methods that are employed by TCP to ensure that the data that it is transmitting between 2  users are reliable. Below will list the methods.
+1. Pipelined segments
+2. Cummulative acks
+3. Retransmission timer
+
+In an event of retransmission, the protocol will only do so when the following happens.
+1. Timeout events
+2. Duplicate acks
+
+Below attached will be images that show off the different scenarios
+- LOST ACK 
+![lost-ack]()
+- PREMATURE TIMEOUT
+![premature-timeout]()
+- CUMULATIVE ACK
+![cumulative-ack]()
+- FAST RETRANSMIT
+![fast-retransmit]()
+
+![]()
