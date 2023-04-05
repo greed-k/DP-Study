@@ -116,10 +116,17 @@ In an event of retransmission, the protocol will only do so when the following h
 
 Below attached will be images that show off the different scenarios
 - LOST ACK 
+
 ![lost-ack](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/lost-ack.png)
+
 - PREMATURE TIMEOUT
+
 ![premature-timeout](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/premature-timeout.png)
+
 - CUMULATIVE ACK
+
 ![cumulative-ack](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/cumulative-ack.png)
+
 - FAST RETRANSMIT
+
 ![fast-retransmit](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/fast-retransmit.png)
