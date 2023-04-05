@@ -1,5 +1,4 @@
 # Error Control
-
 ## Stop-and-Wait
 - •Packet is sent **one** at a time. 
 - If **ACK** is received, the next packet is sent.
@@ -57,7 +56,6 @@ $$Efficiency = \frac{t_{packet}}{t_{packet} + 2t_{propagation}} = \frac{1}{1+2a}
 $$Efficiency = \frac{N * t_{packet}}{t_{packet} + 2t_{propagation}} =\frac{N}{1+2a}$$
 
 # Flow Control
----
 - Why is it needed?
 	- To help regulate the data flow that a receiving transport entity will receieve.
 	- Too much data might be sent to the entity at one point which can cause the receiving entity to have the buffer overflowed.
