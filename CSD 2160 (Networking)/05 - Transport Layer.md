@@ -96,7 +96,7 @@ Slow start employs 3 phases in trasmitting data to help control the amount of ou
 	- Congestion is detected from the loss of packets
 	- Apply multiplicative decrease algo to change window size
 
-![SlowStart]()
+![SlowStart](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/slow-start.png)
 
 In the detection phase, there are 2 cases that can happen which are discussed below
 1. Retransmission due to **Timeout** 
@@ -109,9 +109,9 @@ In the detection phase, there are 2 cases that can happen which are discussed be
 	2. cwnd is set to ssthresh 
 	3. start at congestion avoidance phase
 
-![case1]()
+![case1](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/case1-timeout.png)
 
-![case2]()
+![case2](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/case2-dupe.png)
 
 # TCP Segment Options
 ---
