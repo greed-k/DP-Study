@@ -86,7 +86,6 @@ The acknowledgement number (**ACK**) is a number that is retrived from the messa
 
 For better illustration, a diagram will be provided below which is a snippet from the slides.
 
-Eg. 
 ![seqNack](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/seqNack.png)
 
 As seen from the imgage above, host A types in the character 'C' and it is sent over to host B. 
