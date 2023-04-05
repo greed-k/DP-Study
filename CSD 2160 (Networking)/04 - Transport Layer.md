@@ -87,7 +87,7 @@ The acknowledgement number (**ACK**) is a number that is retrived from the messa
 For better illustration, a diagram will be provided below which is a snippet from the slides.
 
 Eg. 
-![seqNack]()
+![seqNack](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/seqNack.png)
 
 As seen from the imgage above, host A types in the character 'C' and it is sent over to host B. 
 Host B receives the message, acknowledges the message by taking the sequence number that was used for the previous number to be used as the acknowledge number (**ACK**) to inform the other host when sending back the message that it has already received the message previously. The size of the data is then also factored into the acknowledge number that is being set over, hence why the number changed from 42 to 43.
@@ -96,7 +96,7 @@ The sequence number that is used for host B to send back the message will then b
 
 ### Closing a TCP connection
 
-![closingTCP]()
+![closingTCP](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/closeTCP.png)
 
 Steps that is followed by the protocol to close the connection.
 1. Client will send a message containing the flag **FIN** set to 1.
@@ -116,12 +116,10 @@ In an event of retransmission, the protocol will only do so when the following h
 
 Below attached will be images that show off the different scenarios
 - LOST ACK 
-![lost-ack]()
+![lost-ack](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/lost-ack.png)
 - PREMATURE TIMEOUT
-![premature-timeout]()
+![premature-timeout](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/premature-timeout.png)
 - CUMULATIVE ACK
-![cumulative-ack]()
+![cumulative-ack](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/cumulative-ack.png)
 - FAST RETRANSMIT
-![fast-retransmit]()
-
-![]()
+![fast-retransmit](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/fast-retransmit.png)
