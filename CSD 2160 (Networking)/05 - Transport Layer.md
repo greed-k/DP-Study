@@ -1,5 +1,5 @@
 # Error Control
----
+
 ## Stop-and-Wait
 - •Packet is sent **one** at a time. 
 - If **ACK** is received, the next packet is sent.
@@ -50,7 +50,6 @@ Loss is detected with the following methods
 	- Value of timer is 2 times the lifetime of the segment
 
 # Efficiency
----
 $$a = \frac{t_{propagation}}{t_{packet}}$$
 ## Stop-and-Wait
 $$Efficiency = \frac{t_{packet}}{t_{packet} + 2t_{propagation}} = \frac{1}{1+2a}$$
@@ -74,7 +73,6 @@ $$Efficiency = \frac{N * t_{packet}}{t_{packet} + 2t_{propagation}} =\frac{N}{1+
 		- Destination can send back an acknowledgement anytime
 
 # Congestion Control
----
 Congestion happens due to the rapid growth of the internet. Congestion of internet traffic causes packet loss and the losses leads to re-transmissions. These retransmissions if not regulated will fill the traffic and cause the network to collapse.
 
 Below in the subsections lists the 3 techniques that is being used by TCP to help regulate congestion control.
@@ -114,7 +112,6 @@ In the detection phase, there are 2 cases that can happen which are discussed be
 ![case2](https://github.com/greed-k/DP-Study/blob/master/CSD%202160%20(Networking)/images/case2-dupe.png)
 
 # TCP Segment Options
----
 Usually **20** bytes, but can contain up to **40** bytes and at the end of the option there is one byte that will signify end-of-option.
 
 There is a maximum segment size that can be defined during the connection setup. this value can be up to 2 bytes in value
